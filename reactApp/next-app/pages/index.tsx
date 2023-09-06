@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPostInfo, setSelectedPostInfo] = useState(null);
+  const [selectedPostInfo, setSelectedPostInfo] = useState<any>(null);
 
   const openModal = (postInfo:any) => {
     setSelectedPostInfo(postInfo);
@@ -101,20 +101,24 @@ export default function Home() {
   </Head>
 <div className="flex">
   <div className="md:w-1/2">
+    <div className="text-2xl font-bold bg-white rounded-md mr-5 mt-5 mb-5 py-5 pl-10 pr-5">
       <h2>卒業制作ポートフォリオ</h2>
-      <h3>プロフィール</h3>
+    </div>
+      
+      <div className="bg-white rounded-md mr-5 p-10">
+      <h3 className="font-bold text-xl mb-5">プロフィール</h3>
       <p>一ノ宮綾平</p>
       <p>九州デザイナー学院ゲームCG学科ゲームプログラム専攻2年</p>
-      <p>現在は東京の企業に内定をもらいインターンで研修を受けています。
-      </p>
-      <h3 className="font-bold">技術スタック</h3>
+      <p>現在は東京の企業に内定をもらいインターンで研修を受けています。</p>
+      </div>
       <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={125}
+      naturalSlideHeight={100}
       totalSlides={8} // アイコンの総数に合わせて調整
       visibleSlides={5} // 一度に表示するアイコンの数を調整
-      className="mr-40 mt-10 select-none"
+      className="mr-5 bg-white p-10 mt-5 select-none rounded-md "
     >
+      <h3 className="font-bold text-xl mb-5" >技術スタック</h3>
       <Slider>
         <Slide index={0}>
           <div className="text-center">
@@ -164,15 +168,26 @@ export default function Home() {
             <p className="mt-2">Unity</p>
           </div>
         </Slide>
-        {/* 追加のアイコンに対するSlideコンポーネントも同様に追加 */}
       </Slider>
-      <ButtonBack>Back</ButtonBack>
-      <ButtonNext>Next</ButtonNext>
+      <div className="flex justify-between">
+      <div className="text-sm text-center font-bold rounded-md bg-blue-200 w-16"><ButtonBack>Back</ButtonBack></div>
+      <div className="text-sm text-center font-bold rounded-md bg-blue-200 w-16"><ButtonNext>Next</ButtonNext></div>
+      </div>
     </CarouselProvider>
 
+    <div className="bg-white rounded-md mt-5 p-10 mr-5">
+      <h3 className="font-bold text-xl mb-5">問い合わせ</h3>
+      <p>メールアドレス:ichiryo108@gmail.com</p>
+      <p>電話番号:080-8383-6352</p>
+      </div>
 
   </div>
-  <div className="md:w-1/2 grid grid-cols-1 gap-4">
+
+  <div className="md:w-1/2 h-screen">
+    <div className="bg-white rounded-md mt-5 p-5">
+      <h3 className="font-bold text-xl">作品</h3>
+    </div>
+    <div className="mt-5 grid grid-cols-1 gap-4 overflow-y-scroll h-4/5">
     {postInfoList.map((postInfo) => (
       <div
         key={postInfo.id}
@@ -201,6 +216,7 @@ export default function Home() {
         </div>
       </div>
     ))}
+    </div>
   </div>
   </div>
 
