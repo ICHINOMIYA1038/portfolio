@@ -93,15 +93,15 @@ export default function Home() {
   
 
   return (
-<div className="p-4">
+<div className="px-4">
   <Head>
     <title>ポートフォリオ</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
   </Head>
-<div className="flex">
-  <div className="md:w-1/2">
-    <div className="text-2xl font-bold bg-white rounded-md mr-5 mt-5 mb-5 py-5 pl-10 pr-5">
+<div className="flex ">
+  <div className="md:w-1/2 h-screen">
+    <div className="text-2xl font-bold bg-white rounded-md mr-5 mt-10 mb-5 py-5 pl-10 pr-5">
       <h2>卒業制作ポートフォリオ</h2>
     </div>
       
@@ -178,13 +178,13 @@ export default function Home() {
     <div className="bg-white rounded-md mt-5 p-10 mr-5">
       <h3 className="font-bold text-xl mb-5">問い合わせ</h3>
       <p>メールアドレス:ichiryo108@gmail.com</p>
-      <p>電話番号:080-8383-6352</p>
+      <p className="mb-8">電話番号:080-8383-6352</p>
       </div>
 
   </div>
 
   <div className="md:w-1/2 h-screen">
-    <div className="bg-white rounded-md mt-5 p-5">
+    <div className="bg-white rounded-md mt-10 p-5">
       <h3 className="font-bold text-xl">作品</h3>
     </div>
     <div className="mt-5 grid grid-cols-1 gap-4 overflow-y-scroll h-4/5">
