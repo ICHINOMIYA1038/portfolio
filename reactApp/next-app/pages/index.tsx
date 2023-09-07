@@ -118,7 +118,7 @@ export default function Home() {
       visibleSlides={5} // 一度に表示するアイコンの数を調整
       className="mr-5 bg-white p-10 mt-5 select-none rounded-md "
     >
-      <h3 className="font-bold text-xl mb-5" >技術スタック</h3>
+      <h3 className="font-bold text-xl mb-5" >スキル</h3>
       <Slider>
         <Slide index={0}>
           <div className="text-center">
