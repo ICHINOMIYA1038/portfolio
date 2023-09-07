@@ -1,9 +1,7 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Modal from '@/components/Modal'
 import Post from '@/components/Post'
-import Link from 'next/link'
 import { useState } from 'react'
 import { CarouselProvider, Slider, Slide, ButtonNext, ButtonBack } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css'; // スライダースタイルのインポート
