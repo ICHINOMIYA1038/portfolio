@@ -34,7 +34,8 @@ export default function Home() {
       title: "脚本を投稿するプラットフォーム",
       imageUrl: "/img/aaa.png",
       youtubeEmbedUrl: "",
-      description: "https://gikyokumori-front.vercel.app/",
+      description:
+        "https://gikyokumori-front.vercel.app/ ログインしないでください。",
       githubUrl: "",
       usedTechnologies: "ruby, Next.js, rails",
       genre: "webアプリ",
