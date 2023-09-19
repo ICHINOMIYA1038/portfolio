@@ -115,7 +115,7 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </Head>
-      <div className="flex ">
+      <div className="md:flex ">
         <div className="md:w-1/2 h-screen">
           <div className="text-2xl font-bold bg-white rounded-md mr-5 mt-10 mb-5 py-5 pl-10 pr-5">
             <h2>卒業制作ポートフォリオ</h2>
